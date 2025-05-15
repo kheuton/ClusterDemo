@@ -23,3 +23,6 @@ There is a graphing function in scripts/graphing_utils.py that you can use.
 
 
 3. How many graphs did you make? If the number is different than above, how could you investigate?
+
+## Hints and solutions
+To see a version of this repository with the necessary scripts outlined for you, checkout the `with_clues` branch. For one with solutions, checkout `solutions`.
