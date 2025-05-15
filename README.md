@@ -17,22 +17,9 @@ There is a graphing function in scripts/graphing_utils.py that you can use.
 ## Questions
 
 1. What files do you need to create?
-    > A python script that will graph a single country
 
-    > A slurm file that will call that script for a single country
-    
-    > A file that loops over all countries and submits the slurm script.
 
-1. How many countries are there and how would you count?
-    > 248
+2. How many countries are there and how would you count?
 
-    > `ls -lth data | wc -l` = 250, subtract 2: 1 for the header and 1 for the countries.csv
 
-    > `cat data/countries.csv | wc -l` = 249, subtract 1 for the header
-
-2. How many graphs did you make? If the number is different than above, how could you investigate?
-    > 247
-
-    > `grep Error .*`, this function searches every file for the text 'Error'
-    
-    > The error is in a .out file (and not a .err) because the error was handled by the script and not raised. 
+3. How many graphs did you make? If the number is different than above, how could you investigate?
