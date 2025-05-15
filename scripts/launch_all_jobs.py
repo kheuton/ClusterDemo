@@ -19,7 +19,13 @@ with open(countries_file, 'r') as file:
         iso2 = row['iso2']
 
         # Construct the sbatch command with flags
-        command = # TODO: Construct the sbatch command
+        command = [
+            'sbatch',
+            slurm_script,
+            '--country_name', country_name,
+            '--iso2', iso2,
+            '--data_root_dir', data_dir
+        ]
 
         # Submit the job
         subprocess.run(command)
