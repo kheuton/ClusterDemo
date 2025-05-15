@@ -9,4 +9,4 @@
 #SBATCH --mem=8G
 
 # Run the script with provided arguments
-python process_single_country.py "$@"
+python ./scripts/process_single_country.py "$@"
